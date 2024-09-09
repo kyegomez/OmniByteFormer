@@ -27,7 +27,13 @@ OmniByteFormer is built on a byte-level Transformer architecture. The core model
 
 ### Training the Model
 
-You can train the model on your own dataset. Prepare the dataset by converting your data (text, images, audio, video) to byte sequences using the provided `byteify` function.
+```bash
+python train_byte_transformer.py --epochs 10 --batch_size 32 --lr 1e-4 --seq_len 128 --save_path ./checkpoints
+```
+
+
+## Example
+
 
 ### Converting Outputs Back to Data
 
@@ -46,5 +52,3 @@ Feel free to contribute to this project. Fork the repo, make changes, and submit
 ## License
 
 This project is licensed under the MIT License.
-
-g
